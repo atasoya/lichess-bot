@@ -11,7 +11,6 @@ engine:                      # Engine settings.
     book:
       standard:              # List of book file paths for variant standard.
         - engines/AcilisKitabi.bin
-        - engines/book2.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
