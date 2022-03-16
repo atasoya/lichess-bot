@@ -1,16 +1,16 @@
-token: "xxxxxxxxxxxxxxxxx"
+token: "lip_q57j9NkfXrhzWeKjxr0L"
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./engines/"          # Directory containing engines, relative to this project.
-  name: "stockfish_13_win_x64_bmi2.exe"        # Binary name of the engine to use.
+  name: "stockfish_14.1_win_x64_avx2.exe"        # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
     enabled: true           # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-        - engines/AcilisKitabi.bin
+        - engines/baron30.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
@@ -23,8 +23,8 @@ engine:                      # Engine settings.
 #   cpuct: 3.1
   uci_options:               # Arbitrary UCI options passed to the engine.
     Move Overhead: 100       # Increase if your bot flags games too often.
-    Threads: 2               # Max CPU threads the engine can use.
-    Hash: 256                # Max memory (in megabytes) the engine can allocate.
+    Threads: 3               # Max CPU threads the engine can use.
+    Hash: 512               # Max memory (in megabytes) the engine can allocate.
 #   go_commands:             # Additional options to pass to the UCI go command.
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
