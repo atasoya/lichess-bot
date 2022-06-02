@@ -10,5 +10,5 @@ my version for accelerated setup of lichess bot with python automation
 - Navigate to the directory in cmd/Terminal: `cd lichess-bot`
 - run the setup.py script `python setup.py`
 - get your token from lichess.org and input it to setup.py and you are now ready to go
-- to start the bot later run the start.py script `python setup.py`
+- to start the bot later run the start.py script `python start.py`
 
